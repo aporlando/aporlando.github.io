@@ -1,0 +1,13 @@
+---
+home:
+  path: '/'
+  title: Home
+resume:
+  path: '/resume'
+  title: Resume
+projects:
+  path: '/projects'
+  title: Projects
+contact:
+  path: '/contact'
+  title: Follow
