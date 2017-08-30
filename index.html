@@ -3,4 +3,13 @@ layout: default
 path: /
 ---
 
-<h1>Hello World</h1>
+<div class="d-flex flex-column align-items-center justify-content-center">
+    <h1>Hi, there.</h1>
+    <p class="h3">I'm Ali Orlando.</p>
+    {% if site.data.descriptors %}
+    <div>I'm a</div>
+    {% for descriptor in site.data.descriptors %}
+      <div>(( {{descriptor}} ))</div>
+    {% endfor %}
+    {% endif %}
+</div>
