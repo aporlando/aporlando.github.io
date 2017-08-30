@@ -3,4 +3,39 @@ layout: default
 path: /resume
 ---
 
-<h1>Hello Resume</h1>
+<h1 id="current" class="h3">What I Do</h1>
+
+{% for position in site.data.resume.experience.current %}
+<div class="d-flex justify-content-between">
+    <strong>{{position.title}} @ {{position.company}}</strong>
+    <div>{{position.start}} - {{position.end}}</div>
+</div>
+<div><em>{{position.location}}</em></div>
+<ul>
+    {% for resp in position.responsibilities %}
+        <li>{{resp}}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+<h1 id="past" class="h3">What I've Done</h1>
+
+{% for position in site.data.resume.experience.past %}
+<div class="d-flex justify-content-between">
+    <strong>{{position.title}} @ {{position.company}}</strong>
+    <div>{{position.start}} - {{position.end}}</div>
+</div>
+<div><em>{{position.location}}</em></div>
+<ul>
+    {% for resp in position.responsibilities %}
+        <li>{{resp}}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+<h1 id="skills" class="h3">Thing I've Used</h1>
+<ul>
+{% for skill in site.data.resume.skills %}
+    <li>{{skill}}</li>
+{% endfor %}
+</ul>

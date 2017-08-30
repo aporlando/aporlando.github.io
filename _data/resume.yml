@@ -1,0 +1,51 @@
+experience:
+  current:
+    -
+      title: Front-End Developer
+      company: OnShift
+      start: May 2016
+      end: now
+      location: Cleveland, OH
+      responsibilities:
+        - Spearheaded adoption of ReactJS and Redux for new product development.
+        - Coach and mentor full stack delivery teams on front-end practices.
+        - Collaborate with User Experience experts on application designs.
+  past:
+    -
+      title: Full-stack Developer
+      company: Big River
+      start: September 2014
+      end: April 2016
+      location: Cleveland, OH
+      responsibilities:
+        - Design and implement new peer to peer fundraising solution for crowd funding online donations
+        - Improve user experience by streamlining user interface and common workflows
+    -
+      title: Full-stack Developer
+      company: IBM UrbanCode
+      start: July 2013
+      end: September 2014
+      location: Cleveland, OH
+      responsibilities:
+        - Feature development on an enterprise-level deployment automation tool
+        - Encouraged and coached team on agile practices
+        - Create integrations with third party tools including Team City, Git, Maven, and more
+education:
+  degree: Bachelor of Science
+  study: Computer Science
+  school: Case Western Reserve University
+  start: August 2009
+  graduation: May 2013
+  location: Cleveland, OH
+  status: graduated
+  gpa: 3.15
+skills:
+  - JavaScript
+  - ReactJS
+  - Redux
+  - HTML
+  - CSS
+  - LESS
+  - Bootstrap
+  - Java
+  - SQL
