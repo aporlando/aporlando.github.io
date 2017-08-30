@@ -36,7 +36,7 @@ path: /resume
 <h1 id="skills" class="h3">Tech I Know</h1>
 <div class="d-flex flex-wrap my-3">
 {% for skill in site.data.resume.skills %}
-    <div class="pr-4">{{skill}}</div>
+    <div style="flex-basis: 33%">{{skill}}</div>
 {% endfor %}
 </div>
 
@@ -44,8 +44,10 @@ path: /resume
 
 {% assign school = site.data.resume.education %}
 <div class="d-flex justify-content-between flex-wrap">
-    <strong>{{school.degree}}, {{school.study}}</strong>
-    <div>{{school.school}}</div>
+    <div>
+        <div><strong>{{school.school}}</strong></div>
+        <div>{{school.degree}}, {{school.study}}</div>
+    </div>
     <div>{{school.start}} - {{school.graduation}}</div>
 </div>
 <div><em>{{school.location}}</em></div>
