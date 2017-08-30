@@ -6,7 +6,7 @@ path: /resume
 <h1 id="current" class="h3">What I Do</h1>
 
 {% for position in site.data.resume.experience.current %}
-<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-between flex-wrap">
     <strong>{{position.title}} @ {{position.company}}</strong>
     <div>{{position.start}} - {{position.end}}</div>
 </div>
@@ -21,7 +21,7 @@ path: /resume
 <h1 id="past" class="h3">What I've Done</h1>
 
 {% for position in site.data.resume.experience.past %}
-<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-between flex-wrap">
     <strong>{{position.title}} @ {{position.company}}</strong>
     <div>{{position.start}} - {{position.end}}</div>
 </div>
@@ -33,9 +33,19 @@ path: /resume
 </ul>
 {% endfor %}
 
-<h1 id="skills" class="h3">Thing I've Used</h1>
-<ul>
+<h1 id="skills" class="h3">Tech I Know</h1>
+<div class="d-flex flex-wrap my-3">
 {% for skill in site.data.resume.skills %}
-    <li>{{skill}}</li>
+    <div class="pr-4">{{skill}}</div>
 {% endfor %}
-</ul>
+</div>
+
+<h1 id="education" class="h3">Where I Learned</h1>
+
+{% assign school = site.data.resume.education %}
+<div class="d-flex justify-content-between flex-wrap">
+    <strong>{{school.degree}}, {{school.study}}</strong>
+    <div>{{school.school}}</div>
+    <div>{{school.start}} - {{school.graduation}}</div>
+</div>
+<div><em>{{school.location}}</em></div>
