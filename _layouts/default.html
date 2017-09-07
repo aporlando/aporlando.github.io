@@ -10,8 +10,13 @@
   </head>
   <body>
     {% include navigation.html %}
-    <div class="container pt-3">
-      {{ content }}
+    <div class="d-flex flex-column">
+      <div class="container pt-3" style="flex: 1 0 100px;">
+        {{ content }}
+      </div>
+      <div style="flex: 0 0 auto;">
+        {% include footer.html %}
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
