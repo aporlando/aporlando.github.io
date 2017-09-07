@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-md navbar-light bg-transparent">
-    <div class="container">
-        <div class="navbar-brand">Ali Orlando</div>
+<nav class="navbar navbar-expand navbar-light bg-transparent">
+    <div class="container d-flex flex-wrap">
+        <div class="navbar-brand"><img height="60" width="60" src="/images/ao-brand-v1.png" /></div>
         {% if site.data.navigation %}
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="justify-content-end" id="navbarNav">
+                <ul class="navbar-nav d-flex flex-wrap">
                     {% for nav_hash in site.data.navigation %}
                     {% assign nav_item = nav_hash[1] %}
                     {% if nav_item.path == page.path %}
