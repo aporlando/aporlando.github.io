@@ -4,10 +4,10 @@ home:
   title: Home
 resume:
   path: '/resume'
-  title: Resume
+  title: Experience
 # projects:
 #   path: '/projects'
 #   title: Projects
-contact:
-  path: '/contact'
-  title: Follow
+# contact:
+#   path: '/contact'
+#   title: Follow
