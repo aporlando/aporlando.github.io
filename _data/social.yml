@@ -1,0 +1,15 @@
+-
+  icon: 'twitter-square'
+  brand: 'twitter'
+  name: Twitter
+  href: 'https://twitter.com/fed_goose'
+-
+  icon: 'linkedin-square'
+  brand: 'linkedin'
+  name: LinkedIn
+  href: 'https://www.linkedin.com/in/alisonorlando/'
+-
+  icon: 'github'
+  brand: 'github'
+  name: Github
+  href: 'https://github.com/aporlando'

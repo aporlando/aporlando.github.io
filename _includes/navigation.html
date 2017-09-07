@@ -15,7 +15,7 @@
                         {% assign active = false %}
                     {% endif %}
                     <li class="nav-item{% if active %} active{% endif %}">
-                        <a class="nav-link" href="{{nav_item.path}}">{{nav_item.title}}{% if active %} <span class="sr-only">(current)</span>{% endif %}</a>
+                        <a class="nav-link" href="{{nav_item.path}}"><span class="pb-1"{% if active %} style="border-bottom: 2px solid;"{% endif %}>{{nav_item.title}}{% if active %} <span class="sr-only">(current)</span>{% endif %}</span></a>
                     </li>
                     {% endfor %}
                 </ul>
